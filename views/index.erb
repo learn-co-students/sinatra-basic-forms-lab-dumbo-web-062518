@@ -1,0 +1,8 @@
+<h1>Welcome</h1>
+
+<a href="/new">Click Here To List A Puppy</a>
+
+<p>Look at these cute puppers!</p>
+<% Puppy.all.each do |puppy| %>
+<p><%puts%> Meet <%=puppy.name%>!  They're a <%=puppy.age%> year old <%= puppy.breed%> <a href"/display_puppy"> <%=puppy%>Check out their page!</a>
+  <%end%>
